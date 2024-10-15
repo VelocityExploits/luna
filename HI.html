@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xenon Executor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Space Grotesk', sans-serif;
+            background: linear-gradient(45deg, #220044, #0a0022);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+    max-width: 10000px; /* Increased max-width for a wider panel */
+    padding: 50px; /* Increased padding for more space */
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+    position: relative;
+    z-index: 1;
+    margin-top: 50px;
+    animation: fadeIn 2s forwards;
+}
+
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+
+        .logo {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+
+        .image-box {
+    width: 100%;
+    max-width: 500px;
+    height: auto; /* Changed to auto for flexibility */
+    aspect-ratio: 16/9; /* Optional: Set aspect ratio */
+    margin: 20px auto;
+    background: url('luna.png') no-repeat center center;
+    background-size: cover; /* Changed from contain to cover */
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+        .download-btn {
+            text-decoration: none;
+            color: white;
+            padding: 15px 20px;
+            border: 2px solid white;
+            border-radius: 10px;
+            background: #28a745;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+            transition: all 0.3s;
+            animation: glow 1.5s infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                box-shadow: 0 0 5px #28a745, 0 0 10px #28a745, 0 0 15px #28a745;
+            }
+            to {
+                box-shadow: 0 0 10px #28a745, 0 0 20px #28a745, 0 0 30px #28a745;
+            }
+        }
+
+        .bottom-info {
+            margin-top: 50px;
+            max-width: 600px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+            animation: fadeIn 2s forwards;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="Xenon Logo" class="logo">
+        <div class="image-box"></div>
+        <a href="https://www.mediafire.com/file/244v102rinbbdvd/Luna.zip/file" class="download-btn">
+            <i class="fas fa-download"></i> Download
+        </a>
+    </div>
+    <div class="bottom-info">
+        <p>Luna is a new executor with 55+ UNC. They are one of the only executors that aren't faking the UNC. It's an executor with a great UI and alot of potentional.</p>
+    </div>
+</body>
+</html>
